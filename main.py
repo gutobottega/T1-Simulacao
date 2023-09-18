@@ -18,13 +18,13 @@
 # numeroServidores = int(input("Digite o número de servidores: "))
 # capacidadeFila = int(input("Digite a capacidade da fila: "))
 
-tempoInicial= 2
+tempoInicial = 3
 tempoChegadaA = 1
-tempoChegadaB = 2
-tempoSaidaA = 3
-tempoSaidaB = 6
+tempoChegadaB = 3
+tempoSaidaA = 2
+tempoSaidaB = 4
 numeroServidores = 1
-capacidadeFila = 3
+capacidadeFila = 5
 
 # Números randomicos que serão usados na simulação - 100.000
 numerosRandomicos = []
@@ -102,21 +102,40 @@ def saidaFila(evento, tempo):
         addEscalonador('saida')
 
 
-arquivo = open('ale.txt', 'r')
-for linha in arquivo:
-    numerosRandomicos.append(float(linha))
-arquivo.close()
+def run(arq):
+    arquivo = open(arq, 'r')
+    for linha in arquivo:
+        numerosRandomicos.append(float(linha))
+    arquivo.close()
 
-while (len(escalonador) > 0 and len(numerosRandomicos) > 0):
-    escalonador.sort(key=lambda x: x['tempo'])
-    print(escalonador)
-    evento = escalonador.pop(0)
-    if (evento['evento'] == 'chegada'):
-        chegadaFila(evento['evento'], evento['tempo'])
-    else:
-        saidaFila(evento['evento'], evento['tempo'])
+    while (len(escalonador) > 0 and len(numerosRandomicos) > 0):
+        escalonador.sort(key=lambda x: x['tempo'])
+        #print(escalonador)
+        evento = escalonador.pop(0)
+        if (evento['evento'] == 'chegada'):
+            chegadaFila(evento['evento'], evento['tempo'])
+        else:
+            saidaFila(evento['evento'], evento['tempo'])
 
-print("Tempo de simulação: ", simulacao['tempo'])
-print("Perda de clientes: ", perda)
+    print("Tempo de simulação: ", evento['tempo'])
+    print("Perda de clientes: ", perda)
+    print("Distribuição de probabilidade dos estados da fila: ",
+          geraDistribuicaoProbabilidade(simulacao['estado'], simulacao['tempo']))
+    return simulacao, perda
+
+tempoTotal = 0
+estadoFinal = [0] * (capacidadeFila + 1)
+perdaFinal = 0
+
+for i in range(5):
+    print("Simulação ", i+1)
+    sim, perd = run('pseudoaleatorio'+str(i+1)+'.txt')
+    tempoTotal += sim['tempo']
+    estadoFinal = [x + y for x, y in zip(estadoFinal, sim['estado'])]
+    perdaFinal += perd
+
+print("Tempo médio de simulação: ", tempoTotal/5)
+print("Perda média de clientes: ", perdaFinal/5)
 print("Distribuição de probabilidade dos estados da fila: ",
-      geraDistribuicaoProbabilidade(simulacao['estado'], simulacao['tempo']))
+      geraDistribuicaoProbabilidade(estadoFinal, tempoTotal))
+    
