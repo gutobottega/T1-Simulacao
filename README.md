@@ -1,6 +1,14 @@
 # T1-Simulacao
 Implementação do algoritmo de simulação (fila simples)
 
+APRESENTAÇÃO - https://youtu.be/eGFhzP7Tgm8
+
+INTEGRANTES
+- Arthur Amestrete
+- Augusto Agostini
+- Kevin Ribas
+- Martin Ferreira
+
 1 - Rode o gerador de números (aleatorio.py) primeiro e depois a simulação
 2 - Rode a simulação alterando a configuração nas linhas 21-27
 

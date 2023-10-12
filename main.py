@@ -117,25 +117,23 @@ def run(arq):
         else:
             saidaFila(evento['evento'], evento['tempo'])
 
-    print("Tempo de simulação: ", evento['tempo'])
+    print("Tempo de simulacao: ", evento['tempo'])
     print("Perda de clientes: ", perda)
-    print("Distribuição de probabilidade dos estados da fila: ",
+    print("Distribuicao de probabilidade dos estados da fila: ",
           geraDistribuicaoProbabilidade(simulacao['estado'], simulacao['tempo']))
     return simulacao, perda
 
 tempoTotal = 0
 estadoFinal = [0] * (capacidadeFila + 1)
-perdaFinal = 0
 
 for i in range(5):
     print("Simulação ", i+1)
     sim, perd = run('pseudoaleatorio'+str(i+1)+'.txt')
     tempoTotal += sim['tempo']
     estadoFinal = [x + y for x, y in zip(estadoFinal, sim['estado'])]
-    perdaFinal += perd
 
-print("Tempo médio de simulação: ", tempoTotal/5)
-print("Perda média de clientes: ", perdaFinal/5)
-print("Distribuição de probabilidade dos estados da fila: ",
+print("Tempo medio de simulacao: ", tempoTotal/5)
+print("Perda media de clientes: ", perda/5)
+print("Distribuicao de probabilidade dos estados da fila: ",
       geraDistribuicaoProbabilidade(estadoFinal, tempoTotal))
     
