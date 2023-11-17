@@ -1,0 +1,70 @@
+Simulação  1
+Tempo de simulação:  67317.78213953413
+Perda de clientes fila1:  125
+Perda de clientes fila2:  630
+Distribuição de probabilidade dos estados da fila:  [1.7603055670524885, 47.14606671216458, 46.17586719470933, 4.917760526073602]
+Distribuição de probabilidade dos estados da fila 2:  [2.375397000159154, 16.91461093893713, 27.244501123228925, 26.56872694479725, 20.594456363539866, 6.302307629337676]
+Simulação  2
+Tempo de simulação:  67437.47482006252
+Perda de clientes fila1:  136
+Perda de clientes fila2:  575
+Distribuição de probabilidade dos estados da fila:  [1.7186093936250975, 47.71334485609919, 45.646310811446114, 4.921734938829598]
+Distribuição de probabilidade dos estados da fila 2:  [2.5225090922658695, 17.654115713840678, 27.98251946991272, 26.060837351861494, 19.756783813995828, 6.023234558123408]
+Simulação  3
+Tempo de simulação:  67375.29041844513
+Perda de clientes fila1:  142
+Perda de clientes fila2:  643
+Distribuição de probabilidade dos estados da fila:  [1.7073977800709523, 47.41485136393498, 45.8361731232738, 5.041577732720274]
+Distribuição de probabilidade dos estados da fila 2:  [2.6304154907988337, 17.614391057688657, 26.653960422115002, 25.246256045989, 21.2661025463251, 6.588874437083408]
+Simulação  4
+Tempo de simulação:  67236.70503483992
+Perda de clientes fila1:  136
+Perda de clientes fila2:  588
+Distribuição de probabilidade dos estados da fila:  [1.7468866532744778, 47.3340669715501, 45.83663843373542, 5.082407941439996]
+Distribuição de probabilidade dos estados da fila 2:  [2.4231186521668757, 17.336600067338836, 28.046150643102898, 26.399625243558695, 19.69424467686809, 6.100260716964607]
+Simulação  5
+Tempo de simulação:  67309.13846130297
+Perda de clientes fila1:  129
+Perda de clientes fila2:  618
+Distribuição de probabilidade dos estados da fila:  [1.6751696035768222, 47.26512751890849, 46.07933762327277, 4.980365254241912]
+Distribuição de probabilidade dos estados da fila 2:  [2.369212644039007, 17.14882754517092, 27.841366631419085, 26.406634251531923, 20.11751791487281, 6.116441012966259]
+Tempo médio de simulação:  67335.27817483693
+Perda média de clientes na fila 1:  133.6
+Perda média de clientes na fila 2:  610.8
+Distribuição de probabilidade dos estados da fila 1:  [1.7216653938395634, 47.374831335766046, 45.91477113691735, 4.988732133477041]
+Distribuição de probabilidade dos estados da fila 2:  [2.4641920468088627, 17.33387496732201, 27.5535724471855, 26.136166726138573, 20.285947209397634, 6.226246603147426]
+Simulação  1
+Tempo de simulação:  67317.78213953413
+Perda de clientes fila1:  125
+Perda de clientes fila2:  630
+Distribuição de probabilidade dos estados da fila:  [1.7603055670524885, 47.14606671216458, 46.17586719470933, 4.917760526073602]
+Distribuição de probabilidade dos estados da fila 2:  [2.375397000159154, 16.91461093893713, 27.244501123228925, 26.56872694479725, 20.594456363539866, 6.302307629337676]
+Simulação  2
+Tempo de simulação:  67437.47482006252
+Perda de clientes fila1:  136
+Perda de clientes fila2:  575
+Distribuição de probabilidade dos estados da fila:  [1.7186093936250975, 47.71334485609919, 45.646310811446114, 4.921734938829598]
+Distribuição de probabilidade dos estados da fila 2:  [2.5225090922658695, 17.654115713840678, 27.98251946991272, 26.060837351861494, 19.756783813995828, 6.023234558123408]
+Simulação  3
+Tempo de simulação:  67375.29041844513
+Perda de clientes fila1:  142
+Perda de clientes fila2:  643
+Distribuição de probabilidade dos estados da fila:  [1.7073977800709523, 47.41485136393498, 45.8361731232738, 5.041577732720274]
+Distribuição de probabilidade dos estados da fila 2:  [2.6304154907988337, 17.614391057688657, 26.653960422115002, 25.246256045989, 21.2661025463251, 6.588874437083408]
+Simulação  4
+Tempo de simulação:  67236.70503483992
+Perda de clientes fila1:  136
+Perda de clientes fila2:  588
+Distribuição de probabilidade dos estados da fila:  [1.7468866532744778, 47.3340669715501, 45.83663843373542, 5.082407941439996]
+Distribuição de probabilidade dos estados da fila 2:  [2.4231186521668757, 17.336600067338836, 28.046150643102898, 26.399625243558695, 19.69424467686809, 6.100260716964607]
+Simulação  5
+Tempo de simulação:  67309.13846130297
+Perda de clientes fila1:  129
+Perda de clientes fila2:  618
+Distribuição de probabilidade dos estados da fila:  [1.6751696035768222, 47.26512751890849, 46.07933762327277, 4.980365254241912]
+Distribuição de probabilidade dos estados da fila 2:  [2.369212644039007, 17.14882754517092, 27.841366631419085, 26.406634251531923, 20.11751791487281, 6.116441012966259]
+Tempo médio de simulação:  67335.27817483693
+Perda média de clientes na fila 1:  133.6
+Perda média de clientes na fila 2:  610.8
+Distribuição de probabilidade dos estados da fila 1:  [1.7216653938395634, 47.374831335766046, 45.91477113691735, 4.988732133477041]
+Distribuição de probabilidade dos estados da fila 2:  [2.4641920468088627, 17.33387496732201, 27.5535724471855, 26.136166726138573, 20.285947209397634, 6.226246603147426]
