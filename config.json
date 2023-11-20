@@ -1,0 +1,43 @@
+{
+    "Tempo Inicial": 1,
+    "Semente": 1,
+    "Filas": [
+        {
+            "Id": 0,
+            "Nome": "f1",
+            "Tempo de Atendimento": "1/1.5",
+            "Tempo de Chegada": "1/4",
+            "Numero de Servidores": 1,
+            "Capacidade da Fila": -1,
+            "Probabilidade Roteamento": {
+                "f2": 0.8,
+                "f3": 0.2
+            }
+        },
+        {
+            "Id": 1,
+            "Nome": "f2",
+            "Tempo de Atendimento": "5/10",
+            "Tempo de Chegada": "0/0",
+            "Numero de Servidores": 3,
+            "Capacidade da Fila": 5,
+            "Probabilidade Roteamento": {
+                "f1": 0.3,
+                "f3": 0.5,
+                "saida": 0.2
+            }
+        },
+        {
+            "Id": 2,
+            "Nome": "f3",
+            "Tempo de Atendimento": "10/20",
+            "Tempo de Chegada": "0/0",
+            "Numero de Servidores": 2,
+            "Capacidade da Fila": 8,
+            "Probabilidade Roteamento": {
+                "f2": 0.7,
+                "saida": 0.3
+            }
+        }
+    ]
+}
